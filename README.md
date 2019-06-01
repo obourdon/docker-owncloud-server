@@ -41,6 +41,7 @@ The available versions should be already pushed to the Docker Hub, but in case y
 ```
 wget https://download.owncloud.org/community/owncloud-10.2.0.tar.bz2
 wget https://github.com/owncloud/user_ldap/releases/download/v0.13.0/user_ldap-0.13.0.tar.gz -O user_ldap.tar.gz
+wget https://github.com/obourdon/owncloud-registration/archive/master.zip -O registration.zip && unzip -q registration.zip && mv owncloud-registration-master registration && tar zcf registration.tar.gz registration && rm -rf registration registration.zip
 
 docker pull owncloud/base
 docker build -t owncloud/server:latest .
