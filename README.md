@@ -39,10 +39,10 @@ To get an overview about the available versions please take a look at the [GitHu
 The available versions should be already pushed to the Docker Hub, but in case you want to try a change locally you can always execute the following command (run from a cloned GitHub repository) to get an image built locally:
 
 ```
-wget https://download.owncloud.org/community/owncloud-10.0.10.tar.bz2
-wget https://github.com/owncloud/user_ldap/releases/download/v0.11.0/user_ldap.tar.gz
+wget https://download.owncloud.org/community/owncloud-10.2.0.tar.bz2
+wget https://github.com/owncloud/user_ldap/releases/download/v0.13.0/user_ldap-0.13.0.tar.gz -O user_ldap.tar.gz
 
-docker pull owncloud/base:xenial
+docker pull owncloud/base
 docker build -t owncloud/server:latest .
 ```
 
